@@ -1,0 +1,61 @@
+/* Stylling sheet for home.html */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+.logo {
+	text-align: left;
+	margin-left: 2%;
+	margin-top: 5px;
+	display: inline;
+}
+
+.date {
+	text-align: right;
+	margin-right: 2%;
+	font-size: 1.6rem;
+	float: right;
+	display: inline;
+	padding-top: 6rem;
+	font-weight: bold;
+	
+}
+
+.navbar {
+	background: #555555;
+	color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 1300px;
+	overflow: auto;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.navbar a:last-child {
+	float: right;
+}
+
+.navbar a {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+	width: 14.285%;
+}
+
+.active {
+	background: #108FE2;
+}
+
+.navbar a:hover{
+	background: black;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Query | W.A.N.T.S</title>
+		<link rel="stylesheet" type="text/css" href="CSS/query.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="logo">
+			  <a href="https://www.waspc.org/" target="_blank">
+	      	    <img src="IMAGE/logo.png" alt="IMAGE">
+	          </a>
+   			</div>
+		</header>
+
+		<nav class="navbar">
+					<a href="home">Home</a>
+					<a href="query" class="active">Query Transport</a>
+					<a href="insert">Enter Entry</a>
+					<a href="modify">Modify Entry</a>
+					<a href="cancel">Cancel Entry</a>
+					<a href="logs">Logs</a>
+					<a href="index">Logout</a>
+		</nav>
+	
+		<section>
+			<h1>Query Transport</h1>
+
+	    <form class="searchform" method="POST" action="/query">
+				
+				<label id="agencylabel" for="agencyinput">Agency</label>
+				<select id="agencyinput" name="agency">
+					<option>---</option>
+					<option>ADAMS</option>
+					<option>ASOTIN</option>
+					<option>BENTON</option>
+					<option>CHELAN</option>
+					<option>CLALLAM</option>
+					<option>CLARK</option>
+					<option>COLUMBIA</option>
+					<option>COWLITZ</option>
+					<option>DOUGLAS</option>
+					<option>FERRY</option>
+					<option>FRANKLIN</option>
+					<option>GARFIELD</option>
+					<option>GRANT</option>
+					<option>GRAYS HARBOR</option>
+					<option>ISLAND</option>
+					<option>JEFFERSON</option>
+					<option>KING</option>
+					<option>KITSAP</option>
+					<option>KITTITAS</option>
+					<option>KLICKITAT</option>
+					<option>LEWIS</option>
+					<option>LINCOLN</option>
+					<option>MASON</option>
+					<option>OKANOGAN</option>
+					<option>PACIFIC</option>
+					<option>PEND OREILLE</option>
+					<option>PIERCE</option>
+					<option>SAN JUAN</option>
+					<option>SKAGIT</option>
+					<option>SKAMANIA</option>
+					<option>SNOHOMISH</option>
+					<option>SPOKANE</option>
+					<option>STEVENS</option>
+					<option>THURSTON</option>
+					<option>WAHKIAKUM</option>
+					<option>WALLA WALLA</option>
+					<option>WHATCOM</option>
+					<option>WHITMAN</option>
+					<option>YAKIMA</option>
+					<option>---------</option>
+					<option>ALASKA</option>
+					<option>ARIZONA</option>
+					<option>CALIFORNIA</option>
+					<option>COLORADO</option>
+					<option>IDAHO</option>
+					<option>ILLIONOIS</option>
+					<option>IOWA</option>
+					<option>KANSAS</option>
+					<option>MINNESOTA</option>
+					<option>MISSOURI</option>
+					<option>MONTANA</option>
+					<option>NEBRASKA</option>
+					<option>NEWMEXICO</option>
+					<option>NEVADA</option>
+					<option>NORTHDAKOTA</option>
+					<option>OKLAHOMA</option>
+					<option>OREGON</option>
+					<option>SOUTHDAKOTA</option>
+					<option>TEXAS</option>
+					<option>UTAH</option>
+					<option>WISCONSIN</option>
+					<option>WYOMING</option>
+				</select>
+
+				<label for="dateinput" id="datelabel">Date of Transport</label> 
+				<input id="dateinput" type="date" name="dot">
+
+				<label id="sfirstlabel" for="sfirstinput">First Name</label> <!-- name field -->
+				<input style="text-transform:uppercase" id="sfirstinput"  type="text" name="firstname" placeholder="Enter First Name">
+
+				<label id="slastlabel" for="slastinput">Last Name</label> 
+				<input style="text-transform:uppercase" id="slastinput"  type="text" name="lastname" placeholder="Enter Last Name">
+
+				<label for="sdobinput" id="sdoblabel" for="dobinput">DOB</label> 
+				<input id="sdobinput" type="date" name="dob">
+				
+				<button id="searchbtn" type="submit">Search</button> 
+				<button id="cancelsearchbtn" type="reset">Clear</button>
+
+				<label for="shortlist" id="shortlabel">Short List</label>
+				<input type="checkbox" id="shortlist" name="short">
+
+				
+			</form>
+
+			
+		</section>
+
+
+
+	</body>
+
+	<script type="text/javascript">
+
+		function forceInputUppercase(e)
+		{
+			var start = e.target.selectionStart;
+			var end = e.target.selectionEnd;
+			e.target.value = e.target.value.toUpperCase();
+			e.target.setSelectionRange(start, end);
+		}
+		document.getElementById("sfirstinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("slastinput").addEventListener("keyup", forceInputUppercase, false);
+
+	
+	</script>
+
+
+
+</html>

@@ -1,0 +1,95 @@
+/* Styling sheet for newuser.html */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+	margin-bottom: 10rem;
+}
+
+.loglogo {
+	text-align: center;
+	margin-top: 7%;
+	margin-bottom: 3%;
+}
+
+.newuser {
+	margin: auto;
+	width: 30%;
+	min-width: 300px;
+	max-width: 500px;
+	padding: 25px 20px;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	background: #F1F1F1;
+}
+
+.newuser label {
+	font-weight: bold;
+}
+
+.newuser input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.newuser select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+.newuser button[type=submit] {
+	background: #4CAF50;
+	border-radius: 4px;
+	color: white;
+	width: 80px;
+	padding: 7px 5px;
+	margin-right: 3px;
+	margin-top: auto;
+	margin-bottom: auto;
+	border: 1px solid #29912D;
+	box-sizing: border-box;
+}
+
+.newuser button[type=button] {
+	background: #ffffff;
+	border-radius: 4px;
+	color: black;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #000000;
+	margin-top: auto;
+	margin-bottom: auto;
+	float: right;
+	box-sizing: border-box;
+}
+
+#bad {
+	font: 1.3rem;
+	color: red;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+#good {
+	font: 1.3rem;
+	color: green;
+	text-align: center;
+	margin-top: 2rem;
+}
+

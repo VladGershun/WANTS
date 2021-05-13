@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Modify | W.A.N.T.S</title>
+		<link rel="stylesheet" type="text/css" href="CSS/modify.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="logo">
+				<a href="https://www.waspc.org/" target="_blank">
+	      	<img src="IMAGE/logo.png" alt="IMAGE">
+	      </a>
+   		</div>
+		</header>
+
+		<nav class="navbar">
+					<a href="home">Home</a>
+					<a href="query">Query Transport</a>
+					<a href="insert">Enter Transport</a>
+					<a href="modify" class="active">Modify Transport</a>
+					<a href="cancel">Cancel Transport</a>
+					<a href="logs">Logs</a>
+					<a href="index">Logout</a>
+		</nav>
+
+		<section>
+			<h1>Modify Transport</h1>
+			<h1 id="info"><%= title %></h1>
+			<h1 id="good"><%= good %></h1>
+		
+
+
+			<form class="insertform" action="/modify" method="POST">
+				<h3>Enter Person</h1>
+				<label id="sfirstlabel" for="sfirstinput">First Name</label> 
+				<input style="text-transform:uppercase" autocomplete="off" id="sfirstinput"  type="text" name="sfirst" placeholder="Enter First Name" required>
+
+				<label id="slastlabel" for="slastinput">Last Name</label> 
+				<input style="text-transform:uppercase" autocomplete="off" id="slastinput"  type="text" name="slast" placeholder="Enter Last Name" required>
+
+				<label for="sdobinput" id="sdoblabel" for="dobinput">DOB</label> 
+				<input autocomplete="off" id="sdobinput" type="date" name="sdob" required>
+
+				
+
+		
+		
+				<h3 id="updateword">Update Person</h1>
+				
+				<label id="firstlabel" for="firstinput">First Name</label> 
+				<input  style="text-transform:uppercase" autocomplete="off" id="firstinput"  type="text" name="firstname" placeholder="Enter First Name" required>
+
+				<label id="lastlabel" for="lastinput">Last Name</label> 
+				<input style="text-transform:uppercase" autocomplete="off" id="lastinput"  type="text" name="lastname" placeholder="Enter Last Name" required>
+
+				<label id="middlelabel" for="lastinput">Middle Initial</label> 
+				<input style="text-transform:uppercase" autocomplete="off" id="middleinput"  type="text" name="middlename" placeholder="Enter Middle Initial">
+
+				<label for="dobinput" id="doblabel">DOB</label> 
+				<input autocomplete="off" id="dobinput" type="date" name="dob" required>
+
+				<label for="sexinput" id="sexlabel">Sex</label> 
+				<select id="sexinput" name="sex" required>
+					<option>M</option>
+					<option>F</option>
+					<option>X</option>
+				</select>
+
+				<label for="raceinput" id="racelabel">Race</label> 
+				<select id="raceinput" name="race" required>
+					<option>W</option>
+					<option>B</option>
+					<option>A</option>
+					<option>I</option>
+					<option>U</option>
+				</select>
+
+				<label for="adtinput" id="adtlabel">Available Date of Transport</label> 
+				<input autocomplete="off" id="adtinput" type="date" name="adt" required>
+
+				<label for="warrantinput" id="warrantlabel">Warrant #</label>	
+				<input style="text-transform:uppercase" autocomplete="off" id="warrantinput" type="text" name="warrant" placeholder="Enter Warrant #" required>
+				<input style="text-transform:uppercase" autocomplete="off" id="warrantinput2" type="text" name="warrant2" placeholder="Enter Warrant #">
+				<input style="text-transform:uppercase" autocomplete="off" id="warrantinput3" type="text" name="warrant3" placeholder="Enter Warrant #">
+
+				<label for="chargeinput" id="chargelabel">Charge</label> 
+				<input style="text-transform:uppercase" autocomplete="off" id="chargeinput" type="text" name="charge" placeholder="Enter Charge" required>
+				<input style="text-transform:uppercase" autocomplete="off" id="chargeinput2" type="text" name="charge2" placeholder="Enter Charge">
+				<input style="text-transform:uppercase" autocomplete="off" id="chargeinput3" type="text" name="charge3" placeholder="Enter Charge">
+
+				<label for="entryinput" id="entrylabel">Entering Agency</label> 
+				<select id="entryinput" name="eagency" required>
+					<option>ADAMS</option>
+					<option>ASOTIN</option>
+					<option>BENTON</option>
+					<option>CHELAN</option>
+					<option>CLALLAM</option>
+					<option>CLARK</option>
+					<option>COLUMBIA</option>
+					<option>COWLITZ</option>
+					<option>DOUGLAS</option>
+					<option>FERRY</option>
+					<option>FRANKLIN</option>
+					<option>GARFIELD</option>
+					<option>GRANT</option>
+					<option>GRAYS HARBOR</option>
+					<option>ISLAND</option>
+					<option>JEFFERSON</option>
+					<option>KING</option>
+					<option>KITSAP</option>
+					<option>KITTITAS</option>
+					<option>KLICKITAT</option>
+					<option>LEWIS</option>
+					<option>LINCOLN</option>
+					<option>MASON</option>
+					<option>OKANOGAN</option>
+					<option>PACIFIC</option>
+					<option>PEND OREILLE</option>
+					<option>PIERCE</option>
+					<option>SAN JUAN</option>
+					<option>SKAGIT</option>
+					<option>SKAMANIA</option>
+					<option>SNOHOMISH</option>
+					<option>SPOKANE</option>
+					<option>STEVENS</option>
+					<option>THURSTON</option>
+					<option>WAHKIAKUM</option>
+					<option>WALLA WALLA</option>
+					<option>WHATCOM</option>
+					<option>WHITMAN</option>
+					<option>YAKIMA</option>
+					<option>---------</option>
+					<option>ALASKA</option>
+					<option>ARIZONA</option>
+					<option>CALIFORNIA</option>
+					<option>COLORADO</option>
+					<option>IDAHO</option>
+					<option>ILLIONOIS</option>
+					<option>IOWA</option>
+					<option>KANSAS</option>
+					<option>MINNESOTA</option>
+					<option>MISSOURI</option>
+					<option>MONTANA</option>
+					<option>NEBRASKA</option>
+					<option>NEWMEXICO</option>
+					<option>NEVADA</option>
+					<option>NORTHDAKOTA</option>
+					<option>OKLAHOMA</option>
+					<option>OREGON</option>
+					<option>SOUTHDAKOTA</option>
+					<option>TEXAS</option>
+					<option>UTAH</option>
+					<option>WISCONSIN</option>
+					<option>WYOMING</option>
+				</select>
+
+				<label for="originput" id="origlabel">Originating Agency</label> 
+				<select id="originput" name="oagency" required>
+					<option>ADAMS</option>
+					<option>ASOTIN</option>
+					<option>BENTON</option>
+					<option>CHELAN</option>
+					<option>CLALLAM</option>
+					<option>CLARK</option>
+					<option>COLUMBIA</option>
+					<option>COWLITZ</option>
+					<option>DOUGLAS</option>
+					<option>FERRY</option>
+					<option>FRANKLIN</option>
+					<option>GARFIELD</option>
+					<option>GRANT</option>
+					<option>GRAYS HARBOR</option>
+					<option>ISLAND</option>
+					<option>JEFFERSON</option>
+					<option>KING</option>
+					<option>KITSAP</option>
+					<option>KITTITAS</option>
+					<option>KLICKITAT</option>
+					<option>LEWIS</option>
+					<option>LINCOLN</option>
+					<option>MASON</option>
+					<option>OKANOGAN</option>
+					<option>PACIFIC</option>
+					<option>PEND OREILLE</option>
+					<option>PIERCE</option>
+					<option>SAN JUAN</option>
+					<option>SKAGIT</option>
+					<option>SKAMANIA</option>
+					<option>SNOHOMISH</option>
+					<option>SPOKANE</option>
+					<option>STEVENS</option>
+					<option>THURSTON</option>
+					<option>WAHKIAKUM</option>
+					<option>WALLA WALLA</option>
+					<option>WHATCOM</option>
+					<option>WHITMAN</option>
+					<option>YAKIMA</option>
+					<option>---------</option>
+					<option>ALASKA</option>
+					<option>ARIZONA</option>
+					<option>CALIFORNIA</option>
+					<option>COLORADO</option>
+					<option>IDAHO</option>
+					<option>ILLIONOIS</option>
+					<option>IOWA</option>
+					<option>KANSAS</option>
+					<option>MINNESOTA</option>
+					<option>MISSOURI</option>
+					<option>MONTANA</option>
+					<option>NEBRASKA</option>
+					<option>NEWMEXICO</option>
+					<option>NEVADA</option>
+					<option>NORTHDAKOTA</option>
+					<option>OKLAHOMA</option>
+					<option>OREGON</option>
+					<option>SOUTHDAKOTA</option>
+					<option>TEXAS</option>
+					<option>UTAH</option>
+					<option>WISCONSIN</option>
+					<option>WYOMING</option>
+				</select>
+
+				<label for="destinput" id="destlabel">Destination Agency</label> 
+				<select id="destinput" name="dagency" required>
+					<option>ADAMS</option>
+					<option>ASOTIN</option>
+					<option>BENTON</option>
+					<option>CHELAN</option>
+					<option>CLALLAM</option>
+					<option>CLARK</option>
+					<option>COLUMBIA</option>
+					<option>COWLITZ</option>
+					<option>DOUGLAS</option>
+					<option>FERRY</option>
+					<option>FRANKLIN</option>
+					<option>GARFIELD</option>
+					<option>GRANT</option>
+					<option>GRAYS HARBOR</option>
+					<option>ISLAND</option>
+					<option>JEFFERSON</option>
+					<option>KING</option>
+					<option>KITSAP</option>
+					<option>KITTITAS</option>
+					<option>KLICKITAT</option>
+					<option>LEWIS</option>
+					<option>LINCOLN</option>
+					<option>MASON</option>
+					<option>OKANOGAN</option>
+					<option>PACIFIC</option>
+					<option>PEND OREILLE</option>
+					<option>PIERCE</option>
+					<option>SAN JUAN</option>
+					<option>SKAGIT</option>
+					<option>SKAMANIA</option>
+					<option>SNOHOMISH</option>
+					<option>SPOKANE</option>
+					<option>STEVENS</option>
+					<option>THURSTON</option>
+					<option>WAHKIAKUM</option>
+					<option>WALLA WALLA</option>
+					<option>WHATCOM</option>
+					<option>WHITMAN</option>
+					<option>YAKIMA</option>
+					<option>---------</option>
+					<option>ALASKA</option>
+					<option>ARIZONA</option>
+					<option>CALIFORNIA</option>
+					<option>COLORADO</option>
+					<option>IDAHO</option>
+					<option>ILLIONOIS</option>
+					<option>IOWA</option>
+					<option>KANSAS</option>
+					<option>MINNESOTA</option>
+					<option>MISSOURI</option>
+					<option>MONTANA</option>
+					<option>NEBRASKA</option>
+					<option>NEWMEXICO</option>
+					<option>NEVADA</option>
+					<option>NORTHDAKOTA</option>
+					<option>OKLAHOMA</option>
+					<option>OREGON</option>
+					<option>SOUTHDAKOTA</option>
+					<option>TEXAS</option>
+					<option>UTAH</option>
+					<option>WISCONSIN</option>
+					<option>WYOMING</option>
+				</select>
+
+				<label for="tripdateinput" id="tripdatelabel">Trip Date</label>
+				<input autocomplete="off" id="tripdateinput" type="date" name="tripdate" required>
+				<label for="tripdateinput" id="tripdatelabel2">Trip Date</label>
+				<input autocomplete="off" id="tripdateinput2" type="date" name="tripdate2">
+				<label for="tripdateinput" id="tripdatelabel3">Trip Date</label>
+				<input autocomplete="off" id="tripdateinput3" type="date" name="tripdate3" >
+
+				<label for="tripleginput" id="tripleglabel">Trip Legs</label>
+				<input pattern="\w+(, \w+)*" oninvalid="InvalidMsg(this);" placeholder="Enter Trip Legs" style="text-transform:uppercase" autocomplete="off" id="tripleginput" type="text" name="triplegs" required>
+				<label for="tripleginput" id="tripleglabel2">Trip Legs</label>
+				<input pattern="\w+(, \w+)*" oninvalid="InvalidMsg(this);" placeholder="Enter Trip Legs" style="text-transform:uppercase" autocomplete="off" id="tripleginput2" type="text" name="triplegs2">
+				<label for="tripleginput" id="tripleglabel3">Trip Legs</label>
+				<input pattern="\w+(, \w+)*" oninvalid="InvalidMsg(this);" placeholder="Enter Trip Legs" style="text-transform:uppercase" autocomplete="off" id="tripleginput3" type="text" name="triplegs3">
+
+
+				<div id="addinfo">
+					<table class="GeneratedTable">
+						<thead>
+							<tr>
+								<th>Trip Date</th>
+								<th>Legs</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+				
+				<button id="addbtn" type="button" onclick="display(date1, date2, date3)">Add</button> 
+
+				<label for="noteinput" id="notelabel">Notes</label> 
+				<textarea style="text-transform:uppercase" id="noteinput" name="notes" placeholder="Enter any notes/comments"></textarea> 
+
+				<button id="confirmbtn" type="submit">Update</button> 
+				<button id="cancelbtn" onClick="window.location.reload();" type="reset">Clear</button>
+
+			</form>
+
+			<div id="map"><img src="IMAGE/map.png" alt="IMAGE"></div>
+		</section>
+
+
+
+	</body>
+
+	<script type="text/javascript">
+
+		function forceInputUppercase(e)
+		{
+			var start = e.target.selectionStart;
+			var end = e.target.selectionEnd;
+			e.target.value = e.target.value.toUpperCase();
+			e.target.setSelectionRange(start, end);
+		}
+		document.getElementById("sfirstinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("slastinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("firstinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("lastinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("middleinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("chargeinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("chargeinput2").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("chargeinput3").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("warrantinput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("warrantinput2").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("warrantinput3").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("tripleginput").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("tripleginput2").addEventListener("keyup", forceInputUppercase, false);
+		document.getElementById("tripleginput3").addEventListener("keyup", forceInputUppercase, false);
+	
+	</script>
+
+	<script>
+		function update() 
+		{
+
+			firstinput.placeholder = "<%= first %>";
+			lastinput.placeholder = "<%= last %>";
+			dobinput.value = "<%= dob %>";
+			sexinput.value = "<%= sex %>";
+			raceinput.value = "<%= race %>";
+			adtinput.value = "<%= adt %>";
+			warrantinput.placeholder = "<%= warrant %>";
+			chargeinput.placeholder = "<%= charge %>";
+			entryinput.value = "<%= entry %>";
+			originput.value = "<%= origin %>";
+			destinput.value = "<%= destination %>";
+			tripdateinput.value = "<%= tripdate %>";
+			tripleginput.placeholder = "<%= tripleg %>";
+			noteinput.placeholder ="<%= notes %>";
+
+
+		}
+
+	</script>
+
+<script>
+	var count=0;
+	let total=0
+
+	let date1 = document.getElementById('tripdateinput').addEventListener("change", function(event) {
+			date1=event.target.value;
+	});
+	let date2 = document.getElementById('tripdateinput2').addEventListener("change", function(event) {
+			date2=event.target.value;
+	});
+	let date3 = document.getElementById('tripdateinput3').addEventListener("change", function(event) {
+			date3=event.target.value;
+	});
+
+
+	let flag = 0;
+	
+	function display(date1, date2, date3) {
+		let table = document.getElementById('addinfo');
+		let leg1 = document.getElementById('tripleginput').value;	
+		let leg2 = document.getElementById('tripleginput2').value;	
+		let leg3 = document.getElementById('tripleginput3').value;		
+		let c, r, t, c2, r2, t2, c3, r3, t3;
+	
+		t = document.createElement('table');
+		r = t.insertRow(0); 
+		c = r.insertCell(0);
+		c.innerHTML = date1;
+		c = r.insertCell(1);
+		c.innerHTML = leg1.toUpperCase();
+
+		t2 = document.createElement('table');
+		r2 = t2.insertRow(0); 
+		c2 = r2.insertCell(0);
+		c2.innerHTML = date2;
+		c2 = r2.insertCell(1);
+		c2.innerHTML = leg2.toUpperCase();
+
+		t3 = document.createElement('table');
+		r3 = t3.insertRow(0); 
+		c3 = r3.insertCell(0);
+		c3.innerHTML = date3;
+		c3 = r3.insertCell(1);
+		c3.innerHTML = leg3.toUpperCase();
+
+
+		if(flag == 0) {
+		if(date1 != null) document.getElementById("addinfo").appendChild(t);
+		if(date2 != null) document.getElementById("addinfo").appendChild(t2);
+		if(date3 != null) document.getElementById("addinfo").appendChild(t3);
+		flag=1;
+		}
+	}
+
+</script>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+

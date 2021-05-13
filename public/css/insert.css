@@ -1,0 +1,558 @@
+/* Stylling sheet for insert.html */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+.logo {
+	text-align: left;
+	margin-left: 2%;
+	margin-top: 5px;
+	display: inline;
+}
+
+#info {
+	font: 1.3rem;
+	color: red;
+}
+#good {
+	font: 1.3rem;
+	color: green;
+}
+
+.navbar {
+	background: #555555;
+	color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 1300px;
+	overflow: auto;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.navbar a:last-child {
+	float: right;
+}
+
+.navbar a {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+	width: 14.285%;
+}
+
+.active {
+	background: #108FE2;
+}
+
+.navbar a:hover{
+	background: black;
+}
+
+section {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 1rem;
+	position: absolute;
+}
+
+.insertform {
+	margin-top: 1rem; 
+	margin-left: 0%;
+	width: 44rem;
+	min-width: 25rem;
+	height: 55.5rem;
+	padding: 25px 20px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	position: absolute;
+}
+
+.insertform label {
+	font-size: .9rem;
+	margin-left: 2px;
+	display: block;
+	position: absolute;
+	top: auto;
+	font-weight: bold;
+}
+
+.insertform input {
+  width: 42%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.insertform select {
+  width: 42%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/*fields*/
+#firstlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 2.1rem;
+}
+
+#firstinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+	width: 32%;
+}
+
+#lastlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 18.6rem;
+}
+
+#lastinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 18.5rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+	width: 32%;
+}
+
+#middlelabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 34.8rem;
+}
+
+#middleinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 34.7rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+	width: 15%;
+}
+
+#doblabel {
+	position: absolute;
+	top: 5.5rem;
+	left: 2.1rem;
+}
+
+#dobinput {
+	position: absolute;
+	top: 6.1rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 12rem;
+	height: 2.3rem;
+}
+
+#sexlabel {
+	position: absolute;
+	top: 5.5rem;
+	left: 15.7rem;
+}
+
+#sexinput {
+	position: absolute;
+	top: 6.1rem;
+	left: 15.6rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 5rem;
+	height: 2.3rem;
+}
+
+#racelabel {
+	position: absolute;
+	top: 5.5rem;
+	left: 22.6rem;
+}
+
+#raceinput {
+	position: absolute;
+	top: 6.1rem;
+	left: 22.5rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 5rem;
+	height: 2.3rem;
+}
+
+#adtlabel {
+	position: absolute;
+	top: 5.5rem;
+	left: 29.45rem;
+}
+
+#adtinput {
+	position: absolute;
+	top: 6.1rem;
+	left: 29.35rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 12rem;
+	height: 2.3rem;
+}
+
+#warrantlabel {
+	position: absolute;
+	top: 9.8rem;
+	left: 2.1rem;
+}
+
+#warrantinput {
+	position: absolute;
+	top: 10.4rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+}
+
+#warrantinput2 {
+	position: absolute;
+	top: 12.9rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+}
+
+#warrantinput3 {
+	position: absolute;
+	top: 15.4rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+}
+
+#chargelabel {
+	position: absolute;
+	top: 9.8rem;
+	left: 23.1rem;
+}
+
+#chargeinput {
+	position: absolute;
+	top: 10.4rem;
+	left: 23rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+}
+
+#chargeinput2 {
+	position: absolute;
+	top: 12.9rem;
+	left: 23rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+}
+
+#chargeinput3 {
+	position: absolute;
+	top: 15.4rem;
+	left: 23rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	height: 2.3rem;
+}
+
+#entrylabel {
+	position: absolute;
+	top: 19.1rem;
+	left: 2.1rem;
+}
+
+#entryinput {
+	position: absolute;
+	top: 19.7rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.3rem;
+}
+
+#origlabel {
+	position: absolute;
+	top: 19.1rem;
+	left: 15.6rem;
+}
+
+#originput {
+	position: absolute;
+	top: 19.7rem;
+	left: 15.5rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.3rem;
+}
+
+#destlabel {
+	position: absolute;
+	top: 19.1rem;
+	left: 29.2rem;
+}
+
+#destinput {
+	position: absolute;
+	top: 19.7rem;
+	left: 29.1rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.3rem;
+}
+
+#tripdatelabel {
+	position: absolute;
+	top: 25.4rem;
+	left: 2.1rem;
+}
+
+#tripdateinput {
+	position: absolute;
+	top: 26rem;
+	left: 2.1rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.3rem;
+}
+
+#tripdatelabel2 {
+	position: absolute;
+	top: 25.4rem;
+	left: 15.6rem;
+}
+
+#tripdateinput2 {
+	position: absolute;
+	top: 26rem;
+	left: 15.5rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.3rem;
+}
+
+#tripdatelabel3 {
+	position: absolute;
+	top: 25.4rem;
+	left: 29.2rem;
+}
+
+#tripdateinput3 {
+	position: absolute;
+	top: 26rem;
+	left: 29.1rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.3rem;
+}
+
+#tripleglabel2 {
+	position: absolute;
+	top: 29.8rem;
+	left: 15.6rem;
+}
+
+#tripleginput2 {
+	position: absolute;
+	top: 30.4rem;
+	left: 15.5rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.2rem;
+}
+
+#tripleglabel3 {
+	position: absolute;
+	top: 29.8rem;
+	left: 29.2rem;
+}
+
+#tripleginput3 {
+	position: absolute;
+	top: 30.4rem;
+	left: 29.1rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.2rem;
+}
+
+#tripleglabel {
+	position: absolute;
+	top: 29.8rem;
+	left: 2.1rem;
+}
+
+#tripleginput {
+	position: absolute;
+	top: 30.4rem;
+	left: 2.1rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 28%;
+	height: 2.2rem;
+}
+
+#addinfo {
+	position: absolute;
+	top: 35.8rem;
+	left: 2rem;
+	padding: 10px 20px;
+  margin: 10px 0;
+  background: #F1F1F1;
+  width: 39.3rem;
+  height: 6.8rem;
+  resize: none;
+  border-radius: 3px;
+}
+
+th {
+	padding: 0rem 1rem;
+
+}
+
+td {
+	padding: 0rem 1rem;
+}
+
+#addbtn {
+	position: absolute;
+	top: 34rem;
+	left: 2rem;
+	padding: 3px 10px;
+	background: #108FE2;
+	color: white;
+	border-radius: 3px;
+	width: 60px;
+	border: 1px solid #0590ed;
+}
+
+
+#notelabel {
+	position: absolute;
+	top: 44rem;
+	left: 2.1rem;
+}
+
+#noteinput {
+	position: absolute;
+	top: 45rem;
+	left: 2rem;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background: #F1F1F1;
+	width: 39.3rem;
+	height: 6rem;
+	resize: none;
+}
+
+#confirmbtn {
+	background: #4CAF50;
+	border-radius: 4px;
+	color: white;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #29912D;
+	position: absolute;
+	top: 52.5rem;
+	left: 2rem;
+}
+
+#cancelbtn {
+	background: #ffffff;
+	border-radius: 4px;
+	color: black;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #000000;
+	position: absolute;
+	top: 52.5rem;
+	left: 8rem;
+}
+
+#map {
+	position: relative;
+	left: 45rem;
+	top: 1rem;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+/* Stylling sheet for logs.html */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+.logo {
+	text-align: left;
+	margin-left: 2%;
+	margin-top: 5px;
+	display: inline;
+}
+
+.navbar {
+	background: #555555;
+	color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 1300px;
+	overflow: auto;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.navbar a:last-child {
+	float: right;
+}
+
+.navbar a {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+	width: 14.285%;
+}
+
+.active {
+	background: #108FE2;
+}
+
+.navbar a:hover{
+	background: black;
+}
+
+section {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 1rem;
+	position: absolute;
+}
+
+.searchform {
+	margin-top: 1rem; 
+	margin-left: 0%;
+	width: 27.2rem;
+	min-width: 25rem;
+	height: 6.8rem;
+	padding: 25px 20px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	position: absolute;
+}
+
+.searchform label {
+	font-size: .9rem;
+	margin-left: 2px;
+	display: block;
+	position: absolute;
+	top: auto;
+	font-weight: bold;
+}
+
+.searchform input {
+  width: 10rem;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: ;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.searchform select {
+  width: 10rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#searchbtn {
+	background: #4CAF50;
+	border-radius: 4px;
+	color: white;
+	width: 80px;
+	height: 2.3rem;
+	padding: 7px 5px;
+	border: 1px solid #29912D;
+	position: absolute;
+	top: 2.45rem;
+	left: 14rem;
+}
+
+#cancelsearchbtn {
+	background: #ffffff;
+	border-radius: 4px;
+	color: black;
+	width: 80px;
+	height: 2.3rem;
+	padding: 7px 5px;
+	border: 1px solid #000000;
+	position: absolute;
+	top: 2.45rem;
+	left: 19.8rem;
+}
+
+#usernamelabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 2.1rem;
+}
+
+#usernameinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 2rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	width: 11rem;
+  	height: 2.3rem;
+}
+
+
+
+
+
+
+
+
+
+

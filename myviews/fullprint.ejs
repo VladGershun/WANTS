@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Query | W.A.N.T.S</title>
+		<link rel="stylesheet" type="text/css" href="CSS/print.css">
+	</head>
+	
+	<body>
+		<div class="info">
+			<h2><%= title %></h2>
+			<table>
+				<thead>
+					<tr>
+						<th>TRIP DATE</th>
+						<th>LAST</th>
+						<th>FIRST</th>
+						<th>M</th>
+						<th>DOB</th>
+						<th>RACE</th>
+						<th>SEX</th>
+						<th>ADT</th>
+						<th>WARRANT</th>
+						<th>CHARGE</th>
+						<th>FROM</th>
+						<th>TRIP LEGS</th>
+						<th>DEST</th>
+						<th>NOTES</th>
+					</tr>
+				</thead>
+				<tbody>
+						<% inmates.forEach(function(inmates){ %>
+								<tr>
+									<% if(inmates.tripdate2 && inmates.tripdate3) { %>
+										<td><%= moment(inmates.tripdate).format('MM/DD/YYYY') %> <%= moment(inmates.tripdate2).format('MM/DD/YYYY') %> <%= moment(inmates.tripdate3).format('MM/DD/YYYY') %></td>
+									<% } %>
+
+									<% if(!inmates.tripdate2 && inmates.tripdate3) { %>  
+										<td><%= moment(inmates.tripdate).format('MM/DD/YYYY') %> <%= moment(inmates.tripdate3).format('MM/DD/YYYY') %></td>
+								 	<% } %>
+
+									<% if(inmates.tripdate2 && !inmates.tripdate3) { %>  	
+									<td><%= moment(inmates.tripdate).format('MM/DD/YYYY') %> <%= moment(inmates.tripdate2).format('MM/DD/YYYY') %></td>
+									<% } %>	
+
+									<% if(inmates.tripdate && !inmates.tripdate2 && !inmates.tripdate3) { %>  	
+										<td><%= moment(inmates.tripdate).format('MM/DD/YYYY') %></td>
+										<% } %>	
+
+										<td><%= inmates.inmatelast %></td>
+										<td><%= inmates.inmatefirst %></td>
+										<td><%= inmates.inmatemiddle %></td>
+										<td><%= moment(inmates.dob).format('MM/DD/YYYY') %></td>
+										<td><%= inmates.race %></td>
+										<td><%= inmates.sex %></td>
+										<td><%= moment(inmates.adt).format('MM/DD/YYYY') %></td>
+										<td><%= inmates.warrant %> <%= inmates.warrant2 %> <%= inmates.warrant3 %></td>
+										<td><%= inmates.charge %> <%= inmates.charge2 %> <%= inmates.charge3 %></td>
+										<td><%= inmates.eagency %></td>
+										<td><%= inmates.legcheck %></td>
+										<td><%= inmates.dagency %></td>
+										<td><%= inmates.notes %></td>
+								</tr>
+						<% }); %>
+				</tbody>
+			</table>
+		</div>
+
+
+		<button class="button" onclick="window.location.href='/query'" type="button">Back</button>
+
+
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+.info {
+  margin: 10px;
+}
+
+h2 {
+
+}
+
+
+th {
+  padding: 2px 7px;
+  font-size: 1rem;
+  color: white;
+  background-color: #555555;
+}
+
+td {
+  text-align: center;
+}
+
+.button {
+  background: #108FE2;
+	border-radius: 4px;
+	color: white;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #0979C2;
+	margin-left: 10px;
+	margin-right: 3px;
+	margin-top: 20px;
+	margin-bottom: auto;
+	box-sizing: border-box;
+}

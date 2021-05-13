@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>New User | W.A.N.T.S</title>
+		<link rel="stylesheet" type="text/css" href="CSS/newuser.css">
+	</head>
+
+	<body>
+
+    <div class="loglogo"> <!-- logo container -->
+      <a href="https://www.waspc.org/" target="_blank">
+        <img src="IMAGE/logo.png" alt="IMAGE">
+      </a>
+    </div>
+	
+    <form class="insertform" action="/newuser" method="POST">
+    	<div class="newuser">
+    		
+    		<label>Username</label>
+    		<input type="text" name="username" placeholder="Enter Username" required>
+
+    		<label>Name</label>
+    		<input type="text" name="name" placeholder="Enter Name" required>
+
+    		<label>Email</label>
+    		<input type="Email" name="email" placeholder="Enter Email" required>
+
+    		<label>Agency</label>
+    		<select name="agency"> 
+              <option>Clark</option>
+            </select>
+
+    		<label>Phone Number</label>
+    		<input type="text" name="phonenumber" placeholder="Enter Phone Number" required="">
+
+    		<label>Password</label>
+    		<input type="Password" name="password" placeholder="Enter Password" required="">
+
+    		<label>Confirm Password</label>
+    		<input type="Password" name="confirmpass" placeholder="Re-Enter Password" required="">
+    	
+    		<button type="submit">Create</button> <!-- Login button -->
+        <button type="button" onclick="window.location.href='/index'">Back</button> <!-- Cancel button -->
+
+
+
+    	</div>
+
+
+
+    </form>
+		<h1 id="bad"><%= bad %></h1>
+		<h1 id="good"><%= good %></h1>
+		<h1 id="bad"><%= pass %></h1>
+		
+
+	</body>
+
+</html>

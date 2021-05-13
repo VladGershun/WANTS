@@ -1,0 +1,218 @@
+/* Stylling sheet for query.html */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+.logo {
+	text-align: left;
+	margin-left: 2%;
+	margin-top: 5px;
+	display: inline;
+}
+
+.navbar {
+	background: #555555;
+	color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 1300px;
+	overflow: auto;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.navbar a:last-child {
+	float: right;
+}
+
+.navbar a {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+	width: 14.285%;
+}
+
+.active {
+	background: #108FE2;
+}
+
+.navbar a:hover{
+	background: black;
+}
+
+section {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 1rem;
+	position: absolute;
+}
+
+
+.searchform {
+	margin-top: 1rem; 
+	margin-left: 0%;
+	width: 62rem;
+	min-width: 25rem;
+	height: 6rem;
+	padding: 25px 20px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	position: absolute;
+}
+
+.searchform label {
+	font-size: .9rem;
+	margin-left: 2px;
+	display: block;
+	position: absolute;
+	top: auto;
+	font-weight: bold;
+}
+
+.searchform input {
+  width: 10rem;
+  padding: 10px 20px;
+  margin: 10px 0;
+  /* display: ; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.searchform select {
+  width: 10rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#searchbtn {
+	background: #4CAF50;
+	border-radius: 4px;
+	color: white;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #29912D;
+	position: absolute;
+	top: 6.4rem;
+	left: 1.8rem;
+}
+
+#cancelsearchbtn {
+	background: #ffffff;
+	border-radius: 4px;
+	color: black;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #000000;
+	position: absolute;
+	top: 6.4rem;
+	left: 7.8rem;
+}
+
+#agencylabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 2.1rem;
+}
+
+#agencyinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 2rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	width: 10rem;
+  	height: 2.3rem;
+}
+
+#datelabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 14.1rem;
+}
+
+#dateinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 14rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	width: 11rem;
+  	height: 2.3rem;
+}
+
+#sfirstlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 27.1rem;
+}
+
+#sfirstinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 27rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	height: 2.3rem;
+}
+
+#slastlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 39.1rem;
+}
+
+#slastinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 39rem;
+	padding: 10px 20px;
+  margin: 10px 0;
+  background: #F1F1F1;
+  height: 2.3rem;
+}
+
+#sdoblabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 51.1rem;
+}
+
+#sdobinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 51rem;
+	padding: 10px 20px;
+  margin: 10px 0;
+  background: #F1F1F1;
+  width: 11rem;
+  height: 2.3rem;
+}
+
+#shortlabel {
+	position: absolute;
+	top: 6.8rem;
+	left: 15rem;
+}
+
+#shortlist {
+	position: absolute;
+	top: 6.25rem;
+	left: 15.4rem;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | W.A.N.T.S</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+  </head>
+
+  <body>
+    
+    <div class="loglogo">
+      <a href="https://www.waspc.org/" target="_blank">
+        <img src="/image/logo.png" alt="IMAGE">
+
+      </a>
+    </div>
+   
+
+    <form id="logform" method="POST" action="/index"> <!-- login form -->
+    
+      <div class="logscreen"> <!-- login container -->
+       
+        <label><strong>Username</strong></label> <!-- Username field -->
+        <input autocomplete="off" id="usernameinput"  type="text" name="username" placeholder="Enter Username" required>
+
+        <label><strong>Password</strong></label> <!-- Password field -->
+        <input id="passwordinput" type="password" name="password" placeholder="Enter Password" required>
+ 
+        
+        <button type="submit" value="submit">Login</button> <!-- Login button -->
+        <button class="newbutton" onclick="window.location.href='/newuser'" type="button">New User</button> <!-- New User button -->
+        <button type="reset">Cancel</button> <!-- Cancel button -->
+      
+      </div>
+    
+    </form> 
+    <h1 id="info"><%= info %></h1>
+    <script src="JS/index.js"></script>
+  </body>
+
+
+  
+</html>

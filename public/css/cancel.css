@@ -1,0 +1,237 @@
+/* Stylling sheet for cancel.html */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+.logo {
+	text-align: left;
+	margin-left: 2%;
+	margin-top: 5px;
+	display: inline;
+}
+
+.navbar {
+	background: #555555;
+	color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 1300px;
+	overflow: auto;
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.navbar a:last-child {
+	float: right;
+}
+
+.navbar a {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+	width: 14.285%;
+}
+
+.active {
+	background: #108FE2;
+}
+
+.navbar a:hover{
+	background: black;
+}
+
+section {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 1rem;
+	position: absolute;
+}
+
+.cancelform {
+	margin-top: 1rem; 
+	margin-left: 0%;
+	width: 48.2rem;
+	min-width: 25rem;
+	height: 20rem;
+	padding: 25px 20px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	fbackground: #F1F1F1;
+	position: absolute;
+}
+
+.cancelform label {
+	font-size: .9rem;
+	margin-left: 2px;
+	display: block;
+	position: absolute;
+	top: auto;
+	font-weight: bold;
+}
+
+.cancelform input {
+  width: 11rem;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: ;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.cancelform select {
+  width: 42%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#firstlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 2.1rem;
+}
+
+#firstinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 2rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	height: 2.3rem;
+}
+
+#lastlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 15.1rem;
+}
+
+#lastinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 15rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	height: 2.3rem;
+}
+
+#doblabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 28.1rem;
+}
+
+#dobinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 28rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	width: 11rem;
+  	height: 2.3rem;
+}
+
+#sexlabel {
+	position: absolute;
+	top: 1.2rem;
+	left: 41.1rem;
+}
+
+#sexinput {
+	position: absolute;
+	top: 1.8rem;
+	left: 41rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	width: 5rem;
+  	height: 2.3rem;
+}
+
+#notelabel {
+	position: absolute;
+	top: 7rem;
+	left: 2.1rem;
+}
+
+#noteinput {
+	position: absolute;
+	top: 8rem;
+	left: 2rem;
+	padding: 10px 20px;
+  	margin: 10px 0;
+  	background: #F1F1F1;
+  	width: 44rem;
+  	height: 6rem;
+  	resize: none;
+}
+
+#confirmbtn {
+	background: #4CAF50;
+	border-radius: 4px;
+	color: white;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #29912D;
+	position: absolute;
+	top: 15.5rem;
+	left: 2rem;
+}
+
+#cancelbtn {
+	background: #ffffff;
+	border-radius: 4px;
+	color: black;
+	width: 80px;
+	padding: 7px 5px;
+	border: 1px solid #000000;
+	position: absolute;
+	top: 15.5rem;
+	left: 8rem;
+}
+
+#info {
+	font: 1.3rem;
+	color: red;
+}
+#good {
+	font: 1.3rem;
+	color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

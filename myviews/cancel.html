@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>"Project Name"</title>
+		<link rel="stylesheet" type="text/css" href="CSS/cancel.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="logo">
+				<a href="https://www.waspc.org/" target="_blank">
+	      	<img src="IMAGE/logo.png" alt="IMAGE">
+	      </a>
+   		</div>
+		</header>
+
+		<nav class="navbar">
+					<a href="home.html">Home</a>
+					<a href="query.html">Query Transport</a>
+					<a href="insert.html" >Enter Transport</a>
+					<a href="modify.html">Modify Transport</a>
+					<a href="cancel.html" class="active">Cancel Transport</a>
+					<a href="logs.html">Logs</a>
+					<a href="index.html">Logout</a>
+		</nav>
+
+		<section>
+			<h1>Cancel Transport</h1>
+
+			<form class="cancelform">
+				
+				<label id="firstlabel" for="firstinput">First Name</label> <!-- name field -->
+				<input autocomplete="off" id="firstinput"  type="text" name="" placeholder="Enter First Name" required>
+
+				<label id="lastlabel" for="lastinput">Last Name</label> 
+				<input autocomplete="off" id="lastinput"  type="text" name="" placeholder="Enter Last Name" required>
+
+				<label for="dobinput" id="doblabel" for="dobinput">DOB</label> 
+				<input autocomplete="off" id="dobinput" type="date" name="" required>
+
+				<label for="sexinput" id="sexlabel">Sex</label> 
+				<select id="sexinput" required>
+					<option>M</option>
+					<option>F</option>
+					<option>X</option>
+				</select>
+
+				<label for="noteinput" id="notelabel">Reason</label> 
+				<textarea id="noteinput" placeholder="Enter reason for cancelation"></textarea> 
+
+				<button id="confirmbtn" type="submit">Confirm</button> 
+				<button id="cancelbtn" type="reset">Clear</button>
+
+				
+			</form>
+
+
+		</section>
+
+
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

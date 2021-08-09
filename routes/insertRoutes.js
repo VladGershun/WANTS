@@ -11,19 +11,28 @@ router.get('/insert', (req, res) => {
 });
 
 router.post('/insert', (req, res) => {
-  let legs = {
+
+  let legs = { //object that saves the different leg trips
     triplegs: req.body.triplegs,
     triplegs2: req.body.triplegs2,
     triplegs3: req.body.triplegs3
   }
-  let legsarray = [];
+  let legsarray = []; //final object that stores all of the leg trips
   legsarray.push(legs.triplegs);
-  legsarray.push("");
-  legsarray.push(legs.triplegs2);
-  legsarray.push("");
-  legsarray.push(legs.triplegs3);
   
-  let post = {
+  legsarray.push(legs.triplegs2);
+  
+  legsarray.push(legs.triplegs3);
+
+  
+  legsarray.push(req.body.eagency);
+ 
+  legsarray.push(req.body.oagency);
+  
+  legsarray.push(req.body.dagency);
+
+
+  let post = { //object that saves all user input
     inmatefirst: req.body.firstname,
     inmatelast: req.body.lastname,
     inmatemiddle: req.body.middlename,
@@ -50,12 +59,15 @@ router.post('/insert', (req, res) => {
     notes: req.body.notes,
   }
 
-  
+
+
+
+  //first checking if an identical person exists or not
   let sql = `SELECT * FROM inmates WHERE inmatefirst = ? AND inmatelast = ? AND dob = ?`;
   let query = db.query(sql, [post.inmatefirst, post.inmatelast, post.dob], (err, result) => {
       if(err) throw err;
       
-      if(result.length == 0) {
+      if(result.length == 0) { //insert the user into the database if its unique
         let sql = 'INSERT INTO inmates SET ?';
         let query = db.query(sql, post, (err, result) => {
             if(err) throw err;
@@ -65,7 +77,7 @@ router.post('/insert', (req, res) => {
           good: 'Successfully Entered'
         }); 
       } else {
-        res.render(path.resolve('./myviews/insert'), {
+        res.render(path.resolve('./myviews/insert'), { //personl already exits
           title: 'A user with this NAME and DOB already exists in the system'
         }); 
       }

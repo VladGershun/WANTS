@@ -1,5 +1,5 @@
 //javascript for index.html
-
+//NOT IN USE
 const logform = document.querySelector('#logform');
 const username = document.querySelector('#usernameinput');
 const password = document.querySelector('#passwordinput');

@@ -4,6 +4,7 @@ Project: 'W.A.N.T.S' - Washington NW Transport Scheduler
 
 COMPLETED
  - basic CRUD functions
+ - user registration and login
 
 PROGRESS
- - user authentication
+- route authenticaion

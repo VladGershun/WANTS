@@ -11,7 +11,10 @@ const indexRoutes = require('./routes/indexRoutes');
 const modifyRoutes = require('./routes/modifyRoutes');
 const newuserRoutes = require('./routes/newuserRoutes');
 const moment = require("moment");
-
+const jwt = require('jsonwebtoken');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const { promisify } = require('util');
 
 
 
@@ -26,7 +29,10 @@ app.set('myviews', path.join(__dirname, 'myviews'))
 
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public'))) //used for static image
+app.use(express.static(path.join(__dirname, 'public'))); //used for static image
+app.use(bodyParser.json());
+app.use(express.json());
+app.use(cookieParser());
 
 app.use(insertRoutes);
 app.use(cancelRoutes);

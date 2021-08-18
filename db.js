@@ -16,6 +16,8 @@ db.connect(function(err) {
   console.log("Database Connected!");
 });
 
-
+setInterval(function () {
+  db.query('SELECT 1');
+}, 5000);
 
 module.exports = db;

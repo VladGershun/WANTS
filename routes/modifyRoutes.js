@@ -45,6 +45,20 @@ router.post('/modify', (req, res) => {
   legsarray.push(legs.triplegs2);
   legsarray.push("");
   legsarray.push(legs.triplegs3);
+
+  legsarray.push(req.body.eagency);
+  legsarray.push(req.body.oagency);
+  legsarray.push(req.body.dagency);
+
+  let finallegsarray = []; //final object that stores all of the leg trips
+  finallegsarray.push(legs.triplegs);
+  
+  finallegsarray.push(legs.triplegs2);
+  
+  finallegsarray.push(legs.triplegs3);
+
+
+
   let post = {
     inmatefirst: req.body.firstname,
     inmatelast: req.body.lastname,
@@ -69,6 +83,7 @@ router.post('/modify', (req, res) => {
     triplegs2: req.body.triplegs2,
     triplegs3: req.body.triplegs3,
     legcheck: `${legsarray}`,
+    finallegcheck: `${finallegsarray}`,
     notes: req.body.notes,
   }
 

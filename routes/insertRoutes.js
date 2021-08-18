@@ -3,10 +3,12 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const db = require('../db');
+const jwt = require('jsonwebtoken');
+const token = require('./indexRoutes')
 title = "";
 good = "";
 
-router.get('/insert', (req, res) => {
+router.get('/insert',  (req, res) => {
   res.render(path.resolve('./myviews/insert')) 
 });
 
@@ -19,17 +21,21 @@ router.post('/insert', (req, res) => {
   }
   let legsarray = []; //final object that stores all of the leg trips
   legsarray.push(legs.triplegs);
-  
+
   legsarray.push(legs.triplegs2);
-  
   legsarray.push(legs.triplegs3);
+  legsarray.push(req.body.eagency);
+  legsarray.push(req.body.oagency);
+  legsarray.push(req.body.dagency);
+
+
+
+  let finallegsarray = []; //final object that stores all of the leg trips
+  finallegsarray.push(legs.triplegs);
+  finallegsarray.push(legs.triplegs2);
+  finallegsarray.push(legs.triplegs3);
 
   
-  legsarray.push(req.body.eagency);
- 
-  legsarray.push(req.body.oagency);
-  
-  legsarray.push(req.body.dagency);
 
 
   let post = { //object that saves all user input
@@ -56,6 +62,7 @@ router.post('/insert', (req, res) => {
     triplegs2: req.body.triplegs2,
     triplegs3: req.body.triplegs3,
     legcheck: `${legsarray}`,
+    finallegcheck: `${finallegsarray}`,
     notes: req.body.notes,
   }
 
@@ -84,6 +91,7 @@ router.post('/insert', (req, res) => {
     });
     
 });
+
 
 
 module.exports = router;

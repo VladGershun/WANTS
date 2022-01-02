@@ -2,7 +2,7 @@
 
 Creator: Vlad Gershun
 
-Created prototype web app law enforcement 
+Implemented a prototype web app for law enforcement usage. W.A.N.T.S is an online transport schedular that will be used across all counties in the state of Washington. 
 
 ### Login
 <img width="698" alt="login" src="https://user-images.githubusercontent.com/77139888/147862499-fe67decb-92c6-49c3-824e-e6d0fec30ba3.png">
